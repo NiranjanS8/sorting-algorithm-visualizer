@@ -4,6 +4,7 @@ import {
   Sun,
   Moon,
   Github,
+  Linkedin,
   Info,
   Play,
   Pause,
@@ -1387,7 +1388,17 @@ export default function SortLab() {
       <footer className="sl-footer">
         <div style={{ display: "flex", gap: 16 }}>
           <a href="https://github.com/NiranjanS8/sorting-algorithm-visualizer" target="_blank" rel="noreferrer">GitHub Repository</a>
-          <span>MIT License</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span>Built by Niranjan</span>
+          <div style={{ display: "flex", gap: 8 }}>
+            <a href="https://github.com/NiranjanS8/" target="_blank" rel="noreferrer" title="GitHub Profile" style={{ display: "inline-flex", alignItems: "center" }}>
+              <Github size={14} />
+            </a>
+            <a href="https://www.linkedin.com/in/niranjans8" target="_blank" rel="noreferrer" title="LinkedIn Profile" style={{ display: "inline-flex", alignItems: "center" }}>
+              <Linkedin size={14} />
+            </a>
+          </div>
         </div>
       </footer>
 
