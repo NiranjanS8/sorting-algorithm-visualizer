@@ -661,7 +661,7 @@ export default function SortLab() {
                   }}
                   title={`${val}`}
                 >
-                  {arraySize <= 25 && (
+                  {arraySize <= 32 && (
                     <span className="sl-bar-value">{val}</span>
                   )}
                 </div>
@@ -913,6 +913,37 @@ export default function SortLab() {
               Counting, and Radix Sort, each paired with a plain-language explanation of how and when
               to use it.
             </p>
+
+            <div style={{ marginTop: 18 }}>
+              <div className="sl-info-section-title" style={{ fontSize: 10, letterSpacing: "0.06em", color: "var(--accent)" }}>KEY FEATURES</div>
+              <ul style={{ listStyle: "none", padding: 0, margin: "6px 0 0 0", display: "flex", flexDirection: "column", gap: 8 }}>
+                <li style={{ fontSize: 13, color: "var(--text-muted)", display: "flex", alignItems: "flex-start", gap: 8 }}>
+                  <span style={{ color: "var(--accent)", fontSize: 10, marginTop: 4 }}>•</span>
+                  <div>
+                    <strong style={{ color: "var(--text)" }}>Generator Engine:</strong> Visualizes compares, swaps, pivot assignments, and sorted states in real time.
+                  </div>
+                </li>
+                <li style={{ fontSize: 13, color: "var(--text-muted)", display: "flex", alignItems: "flex-start", gap: 8 }}>
+                  <span style={{ color: "var(--accent)", fontSize: 10, marginTop: 4 }}>•</span>
+                  <div>
+                    <strong style={{ color: "var(--text)" }}>Syntax-Highlighted Code:</strong> 45 standalone, idiomatic implementations across JavaScript, Python, Java, C++, and C.
+                  </div>
+                </li>
+                <li style={{ fontSize: 13, color: "var(--text-muted)", display: "flex", alignItems: "flex-start", gap: 8 }}>
+                  <span style={{ color: "var(--accent)", fontSize: 10, marginTop: 4 }}>•</span>
+                  <div>
+                    <strong style={{ color: "var(--text)" }}>Reference Metrics:</strong> Dynamic complexity table comparing stability, space usage, and best/average/worst case bounds.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div style={{ marginTop: 18 }}>
+              <div className="sl-info-section-title" style={{ fontSize: 10, letterSpacing: "0.06em", color: "var(--accent)" }}>TECH STACK</div>
+              <p className="sl-info-desc" style={{ color: "var(--text-muted)" }}>
+                Built with React 18, Vite, HSL custom theme CSS variables, Lucide React icons, and GitHub Actions CI/CD.
+              </p>
+            </div>
           </div>
         </div>
       )}
