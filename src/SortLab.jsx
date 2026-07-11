@@ -794,8 +794,20 @@ export default function SortLab() {
                   <td className="mono">{row.complexity.avg}</td>
                   <td className="mono">{row.complexity.worst}</td>
                   <td className="mono">{row.complexity.space}</td>
-                  <td>{row.stable ? "\u2705" : "\u274C"}</td>
-                  <td>{row.inPlace ? "\u2705" : "\u274C"}</td>
+                  <td>
+                    {row.stable ? (
+                      <Check size={16} style={{ color: "var(--bar-sorted)", verticalAlign: "middle" }} />
+                    ) : (
+                      <X size={16} style={{ color: "var(--bar-swap)", verticalAlign: "middle" }} />
+                    )}
+                  </td>
+                  <td>
+                    {row.inPlace ? (
+                      <Check size={16} style={{ color: "var(--bar-sorted)", verticalAlign: "middle" }} />
+                    ) : (
+                      <X size={16} style={{ color: "var(--bar-swap)", verticalAlign: "middle" }} />
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>
