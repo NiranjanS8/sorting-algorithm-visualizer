@@ -180,7 +180,7 @@
   border: 1px solid var(--border);
   overflow: hidden;
   display: flex; align-items: flex-end; gap: 2px;
-  padding: 10px 10px 0;
+  padding: 24px 10px 0;
 }
 .sl-viz-frame::before {
   content: ''; position: absolute; inset: 0; pointer-events: none;
@@ -194,6 +194,19 @@
   border-radius: 3px 3px 0 0;
   transition: height 0.08s linear, background-color 0.08s linear, box-shadow 0.12s ease;
   min-width: 2px;
+  position: relative;
+}
+.sl-bar-value {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text);
+  pointer-events: none;
+  white-space: nowrap;
 }
 .sl-legend {
   display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--text-muted);

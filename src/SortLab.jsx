@@ -660,7 +660,11 @@ export default function SortLab() {
                         : "none",
                   }}
                   title={`${val}`}
-                />
+                >
+                  {arraySize <= 25 && (
+                    <span className="sl-bar-value">{val}</span>
+                  )}
+                </div>
               ))}
             </div>
             <div className="sl-legend">
